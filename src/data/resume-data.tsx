@@ -8,110 +8,133 @@ import {
   EvercastLogo,
   Howdy,
   JarockiMeLogo,
-  JojoMobileLogo,
   Minimal,
   MobileVikingsLogo,
   MonitoLogo,
-  NSNLogo,
   ParabolLogo,
   TastyCloudLogo,
   YearProgressLogo,
 } from "@/images/logos";
+import { Avatar } from "@/images";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
-  summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
+  name: "Jacob Robson-Tull",
+  initials: "JRT",
+  location: "New York, United States, EST",
+  locationLink: "https://www.google.com/maps/place/NewYork",
+  about: "Computational structural biologist and full-stack developer",
+  summary: "Write a blurb about me here.",
+  avatarUrl: Avatar.src,
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "email@jakert.me",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/jrobsontull",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/jacob-robson-tull/",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://x.com/jrobsontull",
         icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "University of Oxford",
+      degree: "D.Phil. in Molecular Cell Biology of Health and Disease",
+      start: "2019",
+      end: "2023",
+    },
+    {
+      school: "Imperial College London",
+      degree: "B.Sc. in Biochemistry (Hons)",
+      start: "2016",
+      end: "2019",
     },
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
+      company: "Schrödinger",
+      link: "https://www.schrodinger.com",
+      badges: [],
+      title: "Senior Scientist",
       logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      start: "2023",
+      end: "Present",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "Working as part of the Protein Structure Refinement team to enable drug discovery projects. Technologies: Python, structural biology, cryo-EM, X-ray crystallography",
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
+      company: "Cara",
+      link: "https://cara.app",
       badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
+      title: "Full Stack Developer",
       logo: ClevertechLogo,
-      start: "2015",
+      start: "2022",
+      end: "Present",
+      description:
+        "Founding engineer helping to build a social media and portfolio platform for artists. Technologies: TypeScript, React, Next.js, PostgreSQL, Prisma, Tailwind CSS",
+    },
+    {
+      company: "Cafe Maddy Cab",
+      link: "https://cafemaddycab.org",
+      badges: ["Remote"],
+      title: "Developer Lead",
+      logo: ClevertechLogo,
+      start: "2022",
+      end: "2023",
+      description:
+        "Led teams to develop a web app for NYC cab ride reimbursement by the AAPI community. Oversaw development, deployment and maintenance. Technologies: JavaScript, React, Node.js, Linux, MongoDB",
+    },
+    {
+      company: "National Cancer Institute",
+      link: "https://ccr.cancer.gov/center-for-structural-biology",
+      badges: [],
+      title: "Visiting Fellow",
+      logo: ClevertechLogo,
+      start: "2021",
+      end: "2023",
+      description:
+        "Assisted relocation of lab to the US to bring high-resolution cryo-EM to the National Cancer Institute. Established department-wide technologies for expression and purification of multi-component membrane protein complexes. Aided set-up of new cryo-EM facility and provided training to new users.",
+    },
+    {
+      company: "Sir William Dunn School of Pathology",
+      link: "https://www.path.ox.ac.uk/",
+      badges: [],
+      title: "Graduate Researcher",
+      logo: ClevertechLogo,
+      start: "2019",
       end: "2021",
       description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+        "Performed cryo-EM to elucidate mechanisms of protein surveillance and degradation by membraneassociated E3 ligases. Established novel eukaryotic expression system for membrane protein complexes. Developed screening strategies for high-throughput membrane protein purification. Validated structural features with cellular assays",
     },
   ],
   skills: [
+    "Structural Biology",
+    "Protein Refinement",
+    "Cryo-EM",
+    "X-ray Crystallography",
+    "Membrane Proteins",
+    "Eukaryotic Cells",
+  ],
+  techStack: [
+    "Python",
     "JavaScript",
     "TypeScript",
-    "React/Next.js/Remix",
+    "React/Next.js",
     "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    "PostgreSQL",
+    "Prisma",
+    "Tailwind CSS",
   ],
   projects: [
     {
@@ -273,6 +296,42 @@ export const RESUME_DATA = {
       description:
         "Video streaming mobile application for Canal Digital subscribers",
       logo: CDGOLogo,
+    },
+  ],
+  awards: [
+    {
+      title:
+        "Graduate Student Research Award for best presentation in Biochemistry, Immunology and Cell Biology",
+      event: "Graduate Student Research Symposium",
+      issuer: "National Institutes of Health",
+      date: "2022",
+    },
+    {
+      title:
+        "Overall Best Poster Award, for research on the structural mechanisms of protein degradation",
+      event: "Sir William Dunn School of Pathology Annual Symposium",
+      issuer: "University of Oxford",
+      date: "2021",
+    },
+    {
+      title: "Funding to support doctoral research in structural biology",
+      event: "Doctoral Studentship",
+      issuer: "Medical Research Council",
+      date: "2019",
+    },
+    {
+      title:
+        "Funding to undertake work to build a Python course for undergraduate teaching of Life Scientists",
+      event: "Undergraduate Research Bursary",
+      issuer: "Imperial College London",
+      date: "2019",
+    },
+    {
+      title:
+        "Funding to conduct research on “investigating the mode of inhibition of fungal adhesins by cyclic peptides using NMR and X-ray crystallography",
+      event: "EPSRC Vacation Bursary",
+      issuer: "Imperial College London",
+      date: "2018",
     },
   ],
 } as const;
