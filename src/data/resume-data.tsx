@@ -19,14 +19,13 @@ import { Avatar } from "@/images";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Jacob Robson-Tull",
+  name: "Jake Robson-Tull",
   initials: "JRT",
   location: "New York, United States, EST",
   locationLink: "https://www.google.com/maps/place/NewYork",
   about: "Computational structural biologist and full-stack developer",
   summary: "Write a blurb about me here.",
   avatarUrl: Avatar.src,
-  personalWebsiteUrl: "https://jarocki.me",
   contact: {
     email: "email@jakert.me",
     social: [
