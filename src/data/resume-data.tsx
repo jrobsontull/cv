@@ -24,7 +24,8 @@ export const RESUME_DATA = {
   location: "New York, United States, EST",
   locationLink: "https://www.google.com/maps/place/NewYork",
   about: "Computational structural biologist and full-stack developer",
-  summary: "Write a blurb about me here.",
+  summary:
+    "Biophysics graduate and current software engineer with a diverse developer skillset. Proven ability to think through complex problems coupled with a strong collaborative background. Strong structural biology experience in cryo-EM. Fluent in modern JavaScript frameworks and Python.",
   avatarUrl: Avatar.src,
   contact: {
     email: "email@jakert.me",
@@ -70,7 +71,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "Present",
       description:
-        "Working as part of the Protein Structure Refinement team to enable drug discovery projects. Technologies: Python, structural biology, cryo-EM, X-ray crystallography",
+        "Working as part of the Protein Structure Refinement team to enable drug discovery projects. Technologies: Python, Fortran, structural biology, cryo-EM, X-ray crystallography",
     },
     {
       company: "Cara",
@@ -118,6 +119,7 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
+    "Computational Chemistry",
     "Structural Biology",
     "Protein Refinement",
     "Cryo-EM",
@@ -129,6 +131,7 @@ export const RESUME_DATA = {
     "Python",
     "JavaScript",
     "TypeScript",
+    "Fortran",
     "React/Next.js",
     "Node.js",
     "PostgreSQL",
