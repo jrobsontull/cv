@@ -7,7 +7,6 @@ import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
-import { ProjectCard } from "@/components/project-card";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -109,17 +108,51 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {work.start} - {work.end ?? "Present"}
-                    </div>
                   </div>
-
-                  <h4 className="font-mono text-sm leading-none">
-                    {work.title}
-                  </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
+                <CardContent className="mt-1.5 flex flex-col">
+                  {work.roles.map((role, index) => {
+                    return (
+                      // <div className="flex flex-col" key={index}>
+                      //   <div className="flex w-full justify-between">
+                      //     <h4 className="font-mono text-sm text-gray-950">
+                      //       {role.title}
+                      //     </h4>
+                      //     <div className="text-sm tabular-nums text-gray-500">
+                      //       {role.start} - {role.end ?? "Present"}
+                      //     </div>
+                      //   </div>
+                      //   <div className="mt-2 text-xs">{role.description}</div>
+                      // </div>
+                      <div
+                        key={index}
+                        className="flex w-full justify-between space-x-4"
+                      >
+                        {work.roles.length > 1 && (
+                          <div className="mt-1.5 flex flex-col items-center">
+                            <div className="h-2 min-h-2 w-2 min-w-2 rounded-full bg-gray-300" />
+                            {/* if index is not the last element, create a line */}
+                            {index !== work.roles.length - 1 && (
+                              <div className="mt-1.5 h-full w-0.5 bg-gray-300" />
+                            )}
+                          </div>
+                        )}
+                        <div className="flex w-full flex-col">
+                          <div className="flex w-full justify-between">
+                            <h4 className="font-mono text-sm text-gray-950">
+                              {role.title}
+                            </h4>
+                            <div className="text-sm tabular-nums text-gray-500">
+                              {role.start} - {role.end ?? "Present"}
+                            </div>
+                          </div>
+                          <div className="mt-2 pb-3 text-xs">
+                            {role.description}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </CardContent>
               </Card>
             );
