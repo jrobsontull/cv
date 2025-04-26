@@ -126,7 +126,7 @@ export default function Page() {
                       // </div>
                       <div
                         key={index}
-                        className="flex w-full justify-between space-x-4"
+                        className="flex w-full justify-between space-x-3"
                       >
                         {work.roles.length > 1 && (
                           <div className="mt-1.5 flex flex-col items-center">
