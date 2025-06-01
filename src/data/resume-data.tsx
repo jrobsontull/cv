@@ -1,6 +1,5 @@
 import { Avatar } from "@/images";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
-import { title } from "process";
 
 export const RESUME_DATA = {
   name: "Jake Robson-Tull",
@@ -9,7 +8,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/NewYork",
   about: "Computational chemist, structural biologist and full-stack developer",
   summary:
-    "Biophysics graduate and current software engineer with a diverse developer skillset. Proven ability to think through complex problems coupled with a strong collaborative background. Strong structural biology experience in cryo-EM. Fluent in Python and modern JavaScript frameworks.",
+    "Computational chemist with expertise in macrocycle modeling and small molecule docking. Strong background in biophysics and molecular biology with a diverse developer skillset. Fluent in Python and modern JavaScript frameworks, with hands-on experience in structural biology and structure-based drug design.",
   avatarUrl: Avatar.src,
   contact: {
     email: "hello@jakert.me",
@@ -56,7 +55,7 @@ export const RESUME_DATA = {
           start: "2025",
           end: "Present",
           description:
-            "Continuing to enable drug discovery projects internally and externally by building and maintaining our protein structure modeling and refinement suite.",
+            "Continuing to enable drug discovery projects internally and externally by building and maintaining the Schrödinger platform. Building computational tools for macrocycle modelling, induced fit docking and protein refinement.",
         },
         {
           title: "Senior Scientist I",
