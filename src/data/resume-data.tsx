@@ -8,7 +8,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/NewYork",
   about: "Computational chemist, structural biologist and full-stack developer",
   summary:
-    "Computational chemist with expertise in macrocycle modeling and small molecule docking. Strong background in biophysics and molecular biology with a diverse developer skillset. Fluent in Python and modern JavaScript frameworks, with hands-on experience in structural biology and structure-based drug design.",
+    "Interdisciplinary computational chemist with expertise in macrocycle modeling and small molecule docking. My robust background in biophysics and structural biology, combined with fluency in Python and modern JavaScript frameworks, drives impactful contributions in structural biology and structure-based drug design.",
   avatarUrl: Avatar.src,
   contact: {
     email: "hello@jakert.me",
