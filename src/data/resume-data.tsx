@@ -67,6 +67,34 @@ export const RESUME_DATA = {
       ],
     },
     {
+      company: "Cara",
+      link: "https://cara.app",
+      badges: ["Remote"],
+      roles: [
+        {
+          title: "Full Stack Developer",
+          start: "2022",
+          end: "2024",
+          description:
+            "Founding engineer helping to build a social media and portfolio platform for artists. Technologies: TypeScript, React, Next.js, PostgreSQL, Prisma, Tailwind CSS",
+        },
+      ],
+    },
+    {
+      company: "Cafe Maddy Cab",
+      link: "https://cafemaddycab.org",
+      badges: ["Remote"],
+      roles: [
+        {
+          title: "Developer Lead",
+          start: "2022",
+          end: "2023",
+          description:
+            "Led teams to develop a web app for NYC cab ride reimbursement by the AAPI community. Oversaw development, deployment and maintenance. Technologies: JavaScript, React, Node.js, Linux, MongoDB",
+        },
+      ],
+    },
+    {
       company: "National Cancer Institute",
       link: "https://ccr.cancer.gov/center-for-structural-biology",
       badges: [],
