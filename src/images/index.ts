@@ -1,3 +1,3 @@
-import Avatar from "@/images/avatar.jpg";
+import Avatar from "@/images/avatar.png";
 
 export { Avatar };

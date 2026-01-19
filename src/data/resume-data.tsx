@@ -23,11 +23,7 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/jacob-robson-tull/",
         icon: LinkedInIcon,
       },
-      {
-        name: "X",
-        url: "https://x.com/jrobsontull",
-        icon: XIcon,
-      },
+      { name: "X", url: "https://x.com/jrobsontull", icon: XIcon },
     ],
   },
   education: [
