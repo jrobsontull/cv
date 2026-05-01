@@ -18,31 +18,31 @@ export function HeroSection() {
 
   useEffect(() => {
     const sectionIds = navItems.map((item) => item.id);
-    const visibleSections = new Set<string>();
 
     const handleIntersect = (entries: IntersectionObserverEntry[]) => {
+      // Find the section that's currently most in view (closest to top)
+      let mostVisibleSection = activeSection;
+      let highestPosition = Infinity;
+
       for (const entry of entries) {
         if (entry.isIntersecting) {
-          visibleSections.add(entry.target.id);
-        } else {
-          visibleSections.delete(entry.target.id);
+          const rect = entry.boundingClientRect;
+          // Find which section is closest to the top of the viewport
+          if (rect.top < highestPosition && rect.top >= -rect.height * 0.5) {
+            highestPosition = rect.top;
+            mostVisibleSection = entry.target.id;
+          }
         }
       }
 
-      // Set the first visible section (top-most on screen)
-      if (visibleSections.size > 0) {
-        const firstVisibleId = sectionIds.find((id) =>
-          visibleSections.has(id)
-        );
-        if (firstVisibleId) {
-          setActiveSection(firstVisibleId);
-        }
+      if (mostVisibleSection !== activeSection) {
+        setActiveSection(mostVisibleSection);
       }
     };
 
     const observer = new IntersectionObserver(handleIntersect, {
-      rootMargin: "0px 0px -50% 0px",
-      threshold: 0.1,
+      rootMargin: "0px 0px -40% 0px",
+      threshold: 0,
     });
 
     sectionIds.forEach((id) => {
@@ -51,7 +51,7 @@ export function HeroSection() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [activeSection]);
 
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
