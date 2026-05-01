@@ -18,28 +18,39 @@ export function HeroSection() {
 
   useEffect(() => {
     const sectionIds = navItems.map((item) => item.id);
-    const observers: IntersectionObserver[] = [];
+    const visibleSections = new Set<string>();
 
     const handleIntersect = (entries: IntersectionObserverEntry[]) => {
       for (const entry of entries) {
         if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
+          visibleSections.add(entry.target.id);
+        } else {
+          visibleSections.delete(entry.target.id);
+        }
+      }
+
+      // Set the first visible section (top-most on screen)
+      if (visibleSections.size > 0) {
+        const firstVisibleId = sectionIds.find((id) =>
+          visibleSections.has(id)
+        );
+        if (firstVisibleId) {
+          setActiveSection(firstVisibleId);
         }
       }
     };
 
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const observer = new IntersectionObserver(handleIntersect, {
-        rootMargin: "-30% 0px -60% 0px",
-        threshold: 0,
-      });
-      observer.observe(el);
-      observers.push(observer);
+    const observer = new IntersectionObserver(handleIntersect, {
+      rootMargin: "0px 0px -50% 0px",
+      threshold: 0.1,
     });
 
-    return () => observers.forEach((obs) => obs.disconnect());
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   return (
