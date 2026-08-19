@@ -6,9 +6,9 @@ export const RESUME_DATA = {
   initials: "JRT",
   location: "New York, United States, EST",
   locationLink: "https://www.google.com/maps/place/NewYork",
-  about: "Computational chemist, structural biologist and full-stack developer",
+  about: "Computational chemist, structural biologist and engineer",
   summary:
-    "Interdisciplinary computational chemist with expertise in macrocycle and small molecule modeling. My robust background in biophysics and structural biology, combined with fluency in Python and modern JavaScript frameworks, drives impactful contributions in structural biology and structure-based drug design.",
+    "I develop and ship computational tools for macrocycle modeling at Schrödinger, building specialized methods for a modality at the frontier between small molecules and biologics. My work spans the full product lifecycle from developing novel conformational sampling, best-in-class docking algorithms, and permeability prediction tools to productizing them in Schrödinger's software suite. By combining a background in structural biology, computational chemistry, and software development, I bridge cutting-edge biophysics, engineering, and commercial partner needs.",
   avatarUrl: Avatar.src,
   contact: {
     email: "hello@jakert.me",
@@ -51,21 +51,21 @@ export const RESUME_DATA = {
           start: "2026",
           end: "Present",
           description:
-            "Project manager for macrocycles and membrane permeability.",
+            "Lead end-to-end R&D, productization, and deployment of macrocycle modeling and permeability tools in Schrödinger's commercial suite. Published first-in-class macrocycle docking technology and developed scalable conformational sampling methods for complex drug targets. Advanced passive and active permeability prediction methods, enabling robust ADMET modeling for modalities bridging small molecules and biologics. Pitch technical capabilities and present scientific findings to prospective clients, top-tier pharma partners, and conferences.",
         },
         {
           title: "Senior Scientist II",
-          start: "2023",
+          start: "2025",
           end: "2026",
           description:
-            "Continuing to enable drug discovery projects internally and externally by building and maintaining the Schrödinger platform. Building computational tools for macrocycle modelling, induced fit docking and protein refinement.",
+            "Expanded scope from protein structure refinement into macrocycle modeling tool development. Built computational methods for macrocycle modeling and contributed to induced fit docking capabilities within the Schrödinger platform.",
         },
         {
           title: "Senior Scientist I",
           start: "2023",
           end: "2025",
           description:
-            "Working as part of the Protein Structure Refinement team to enable drug discovery projects. Technologies: Python, Fortran, computational chemistry, structural biology, cryo-EM, X-ray crystallography",
+            "Working as part of the Protein Structure Refinement team to enable drug discovery projects.",
         },
       ],
     },
@@ -100,6 +100,9 @@ export const RESUME_DATA = {
   ],
   skills: [
     "Computational Chemistry",
+    "Macrocycle Modeling",
+    "Permeability Prediction",
+    "Structure-based Drug Design",
     "Structural Biology",
     "Protein Refinement",
     "Cryo-EM",
