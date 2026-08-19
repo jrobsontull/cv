@@ -51,21 +51,21 @@ export const RESUME_DATA = {
           start: "2026",
           end: "Present",
           description:
-            "Lead end-to-end R&D, productization, and deployment of macrocycle modeling and permeability tools in Schrödinger's commercial suite. Published first-in-class macrocycle docking technology and developed scalable conformational sampling methods for complex drug targets. Advanced passive and active permeability prediction methods, enabling robust ADMET modeling for modalities bridging small molecules and biologics. Pitch technical capabilities and present scientific findings to prospective clients, top-tier pharma partners, and conferences.",
+            "Scientist and product lead for macrocycle modeling and membrane permeability. Shipped a best-in-class docking technology for macrocycles. Developing conformational sampling methods and permeability prediction tools for this emerging drug modality.",
         },
         {
           title: "Senior Scientist II",
           start: "2025",
           end: "2026",
           description:
-            "Expanded scope from protein structure refinement into macrocycle modeling tool development. Built computational methods for macrocycle modeling and contributed to induced fit docking capabilities within the Schrödinger platform.",
+            "Built computational tools for macrocycle modeling, induced fit docking, and protein refinement within the Schrödinger platform.",
         },
         {
           title: "Senior Scientist I",
           start: "2023",
           end: "2025",
           description:
-            "Working as part of the Protein Structure Refinement team to enable drug discovery projects.",
+            "Developed computational tools for protein structure refinement with experimental cryo-EM and X-ray crystallography data.",
         },
       ],
     },
@@ -104,11 +104,8 @@ export const RESUME_DATA = {
     "Permeability Prediction",
     "Structure-based Drug Design",
     "Structural Biology",
-    "Protein Refinement",
     "Cryo-EM",
     "X-ray Crystallography",
-    "Membrane Proteins",
-    "Eukaryotic Cells",
   ],
   techStack: [
     "Python",
