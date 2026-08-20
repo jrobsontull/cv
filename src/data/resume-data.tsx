@@ -70,6 +70,20 @@ export const RESUME_DATA = {
       ],
     },
     {
+      company: "Cara",
+      link: "https://cara.app",
+      badges: ["Remote"],
+      roles: [
+        {
+          title: "Full Stack Developer",
+          start: "2022",
+          end: "2024",
+          description:
+            "Founding engineer helping build a social media and portfolio platform for artists. Designed and shipped end-to-end product features across the frontend and backend, contributing to the platform’s architecture and core user experience.",
+        },
+      ],
+    },
+    {
       company: "National Cancer Institute",
       link: "https://ccr.cancer.gov/center-for-structural-biology",
       badges: [],
