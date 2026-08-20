@@ -119,6 +119,55 @@ export const RESUME_DATA = {
     "Tailwind CSS",
   ],
   projects: [],
+  scholarUrl: "https://scholar.google.com/citations?user=ZGvO-JYAAAAJ&hl=en",
+  conferences: [
+    {
+      title: "Physics-based flexible docking of macrocyclic ligands with MacroDock",
+      event: "Biophysical Society 70th Annual Meeting",
+      location: "San Francisco, CA",
+      date: "2026",
+    },
+    {
+      title: "Enabling cryo-EM structures for drug discovery",
+      event: "New York Structural Biology Summer 2025 Meeting",
+      location: "New York, NY",
+      date: "2025",
+    },
+    {
+      title:
+        "Macrocycle and cyclic peptide design using Schrödinger's computational modeling platform",
+      event: "Biophysical Society 69th Annual Meeting",
+      location: "Los Angeles, CA",
+      date: "2025",
+    },
+    {
+      title:
+        "Structural biology of mammalian protein quality control systems: a bottom-up screen for cryo-EM targets",
+      event: "NIH Graduate Student Research Symposium",
+      location: "Bethesda, MD",
+      date: "2022",
+    },
+    {
+      title:
+        "Structural biology of mammalian protein quality control systems: a bottom-up screen for cryo-EM targets",
+      event: "Center for Structural Biology Symposium",
+      location: "Frederick, MD",
+      date: "2022",
+    },
+    {
+      title: "Lessons learnt from purifying ER membrane proteins for cryo-EM",
+      event: "Sir William Dunn School of Pathology Annual Symposium",
+      location: "Oxford, UK",
+      date: "2021",
+    },
+    {
+      title:
+        "Developing a eukaryotic expression system for multi-component membrane protein complexes",
+      event: "Sir William Dunn School of Pathology Annual Symposium",
+      location: "Oxford, UK",
+      date: "2020",
+    },
+  ],
   awards: [
     {
       title:

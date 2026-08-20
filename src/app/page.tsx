@@ -222,6 +222,49 @@ export default function Page() {
           })}
         </Section>
 
+        <Section>
+          <h2 className="text-xl font-bold">Publications</h2>
+          <p className="text-pretty font-mono text-sm text-muted-foreground">
+            Full list of journal articles available on{" "}
+            <a
+              className="underline hover:text-foreground"
+              href={RESUME_DATA.scholarUrl}
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              Google Scholar
+            </a>
+            .
+          </p>
+        </Section>
+
+        <Section>
+          <h2 className="text-xl font-bold">Conferences</h2>
+          {RESUME_DATA.conferences.map((conference, index) => {
+            return (
+              <Card key={`${conference.event}-${conference.date}-${index}`}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      {conference.event}
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {conference.date}
+                    </div>
+                  </div>
+
+                  <h4 className="font-mono text-sm leading-none">
+                    {conference.location}
+                  </h4>
+                </CardHeader>
+                <CardContent className="mt-2 text-xs">
+                  {conference.title}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
         {/* <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
