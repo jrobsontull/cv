@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon } from "lucide-react";
+import { ExternalLinkIcon, GlobeIcon, MailIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PublicationCard } from "@/components/publication-card";
 import { RESUME_DATA } from "@/data/resume-data";
@@ -76,7 +76,7 @@ export default function Page() {
             </div>
           </div>
 
-          <Avatar className="size-28">
+          <Avatar className="size-20 sm:size-24 md:size-28">
             <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
           </Avatar>
@@ -184,13 +184,13 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <div className="flex items-baseline justify-between gap-3">
+          <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-3">
             <h2 className="text-lg font-semibold tracking-tight">
               Selected Publications
             </h2>
             <Button
               asChild
-              className="h-auto shrink-0 px-0 text-sm font-normal"
+              className="h-auto max-w-full whitespace-normal px-0 text-left text-sm font-normal leading-5 sm:text-right"
               size="sm"
               variant="link"
             >
@@ -199,7 +199,11 @@ export default function Page() {
                 referrerPolicy="no-referrer"
                 target="_blank"
               >
-                See all on Google Scholar ↗
+                See all on Google Scholar
+                <ExternalLinkIcon
+                  aria-hidden="true"
+                  className="ml-1 inline-block size-3.5 align-[-0.15em]"
+                />
               </a>
             </Button>
           </div>
