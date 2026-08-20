@@ -1,5 +1,5 @@
 import { Avatar } from "@/images";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Jake Robson-Tull",
@@ -23,7 +23,6 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/jacob-robson-tull/",
         icon: LinkedInIcon,
       },
-      { name: "X", url: "https://x.com/jrobsontull", icon: XIcon },
     ],
   },
   education: [
