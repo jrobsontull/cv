@@ -6,9 +6,9 @@ export const RESUME_DATA = {
   initials: "JRT",
   location: "New York, United States, EST",
   locationLink: "https://www.google.com/maps/place/NewYork",
-  about: "Computational chemist, structural biologist and engineer",
+  about: "Computational chemist, structural biologist and software engineer",
   summary:
-    "I develop and ship computational tools for macrocycle modeling at Schrödinger, building specialized methods for a modality at the frontier between small molecules and biologics. My work spans the full product lifecycle from developing novel conformational sampling, best-in-class docking algorithms, and permeability prediction tools to productizing them in Schrödinger's software suite. By combining a background in structural biology, computational chemistry, and software development, I bridge cutting-edge biophysics, engineering, and commercial partner needs.",
+    "I develop and ship computational tools for macrocycle modeling at Schrödinger, building specialized methods for a modality at the frontier between small molecules and biologics. My work spans the full product lifecycle from scientific and software development, to productization in Schrödinger's software suite. By combining a background in structural biology, computational chemistry, and software development, I bridge cutting-edge biophysics, software engineering, and strategic partner needs.",
   avatarUrl: Avatar.src,
   contact: {
     email: "hello@jakert.me",
@@ -51,7 +51,7 @@ export const RESUME_DATA = {
           start: "2026",
           end: "Present",
           description:
-            "Scientist and product lead for macrocycle modeling and membrane permeability. Shipped a best-in-class docking technology for macrocycles. Developing conformational sampling methods and permeability prediction tools for this emerging drug modality.",
+            "Scientist and product lead for macrocycle modeling and membrane permeability. Shipped a best-in-class docking technology for macrocycles. Developing conformational sampling methods and permeability prediction tools for this emerging drug modality. Building new technologies for protein refinement.",
         },
         {
           title: "Senior Scientist II",
@@ -79,7 +79,7 @@ export const RESUME_DATA = {
           start: "2021",
           end: "2023",
           description:
-            "Assisted relocation of lab to the US to bring high-resolution cryo-EM to the National Cancer Institute. Established department-wide technologies for expression and purification of multi-component membrane protein complexes. Aided set-up of new cryo-EM facility and provided training to new users.",
+            "Drove end-to-end structural biology projects on challenging small membrane proteins at the NCI spanning cloning, cell line generation, purification, cryo-EM sample preparation and imaging, map reconstruction, and refinement. Engineered novel eukaryotic expression pipelines and purification protocols for multi-component complexes. Assisted in relocating the lab from Oxford to the NIH, helping establish operations and user training for the new cryo-EM facility.",
         },
       ],
     },
@@ -93,14 +93,14 @@ export const RESUME_DATA = {
           start: "2019",
           end: "2023",
           description:
-            "Conducted research on the structural mechanisms of protein degradation by membrane-associated E3 ligases. Developed novel eukaryotic expression systems for membrane protein complexes. Utilized cryo-EM and X-ray crystallography to elucidate protein structures.",
+            "Elucidated the structural mechanisms of protein degradation mediated by membrane-associated E3 ligases using cryo-EM and X-ray crystallography. Developed novel eukaryotic expression systems for membrane protein complexes.",
         },
       ],
     },
   ],
   skills: [
     "Computational Chemistry",
-    "Macrocycle Modeling",
+    "Macrocycles",
     "Permeability Prediction",
     "Structure-based Drug Design",
     "Structural Biology",
