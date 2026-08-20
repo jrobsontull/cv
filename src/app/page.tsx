@@ -97,7 +97,7 @@ export default function Page() {
                     <h3 className="font-semibold leading-none">
                       {education.school}
                     </h3>
-                    <div className="whitespace-nowrap text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-gray-500">
                       {education.start} - {education.end}
                     </div>
                   </div>
@@ -226,7 +226,7 @@ export default function Page() {
               <Card key={`${conference.event}-${conference.date}-${index}`}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 text-sm font-semibold leading-5">
                       {conference.event}
                     </h3>
                     <div className="whitespace-nowrap text-sm tabular-nums text-gray-500">
@@ -252,7 +252,7 @@ export default function Page() {
               <Card key={award.issuer}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 text-sm font-semibold leading-5">
                       {award.event}
                     </h3>
                     <div className="whitespace-nowrap text-sm tabular-nums text-gray-500">
