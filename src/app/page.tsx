@@ -10,8 +10,14 @@ import { PublicationCard } from "@/components/publication-card";
 import { RESUME_DATA } from "@/data/resume-data";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-  description: RESUME_DATA.summary,
+  title: {
+    absolute: "Jake Robson-Tull — Computational Chemist & Structural Biologist",
+  },
+  description:
+    "Computational chemist and structural biologist building macrocycle modeling and cryo-EM tools at Schrödinger.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function Page() {
