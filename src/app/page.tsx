@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PublicationCard } from "@/components/publication-card";
 import { RESUME_DATA } from "@/data/resume-data";
 
 export const metadata: Metadata = {
@@ -87,6 +88,26 @@ export default function Page() {
           </p>
         </Section>
         <Section>
+          <h2 className="text-lg font-semibold tracking-tight">Education</h2>
+          {RESUME_DATA.education.map((education) => {
+            return (
+              <Card key={education.school}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                      {education.school}
+                    </h3>
+                    <div className="whitespace-nowrap text-sm tabular-nums text-gray-500">
+                      {education.start} - {education.end}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="mt-2">{education.degree}</CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+        <Section>
           <h2 className="text-lg font-semibold tracking-tight">
             Work Experience
           </h2>
@@ -163,57 +184,67 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-lg font-semibold tracking-tight">Education</h2>
-          {RESUME_DATA.education.map((education) => {
+          <div className="flex items-baseline justify-between gap-3">
+            <h2 className="text-lg font-semibold tracking-tight">
+              Selected Publications
+            </h2>
+            <Button
+              asChild
+              className="h-auto shrink-0 px-0 text-sm font-normal"
+              size="sm"
+              variant="link"
+            >
+              <a
+                href={RESUME_DATA.scholarUrl}
+                referrerPolicy="no-referrer"
+                target="_blank"
+              >
+                See all on Google Scholar ↗
+              </a>
+            </Button>
+          </div>
+          <div className="flex flex-col gap-y-5">
+            {RESUME_DATA.publications.map((publication) => (
+              <PublicationCard
+                contribution={publication.contribution}
+                imageUrl={
+                  "imageUrl" in publication ? publication.imageUrl : undefined
+                }
+                key={publication.title}
+                link={publication.link}
+                title={publication.title}
+                venue={publication.venue}
+                year={publication.year}
+              />
+            ))}
+          </div>
+        </Section>
+        <Section>
+          <h2 className="text-lg font-semibold tracking-tight">Conferences</h2>
+          {RESUME_DATA.conferences.map((conference, index) => {
             return (
-              <Card key={education.school}>
+              <Card key={`${conference.event}-${conference.date}-${index}`}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
-                      {education.school}
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      {conference.event}
                     </h3>
                     <div className="whitespace-nowrap text-sm tabular-nums text-gray-500">
-                      {education.start} - {education.end}
+                      {conference.date}
                     </div>
                   </div>
+
+                  <h4 className="text-sm leading-none text-muted-foreground">
+                    {conference.location}
+                  </h4>
                 </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
+                <CardContent className="mt-2 text-sm leading-6">
+                  {conference.title}
+                </CardContent>
               </Card>
             );
           })}
         </Section>
-        <Section>
-          <h2 className="text-lg font-semibold tracking-tight">Publications</h2>
-          <p className="text-pretty font-sans text-sm leading-6 text-muted-foreground">
-            Full list of journal articles available on{" "}
-            <a
-              className="underline hover:text-foreground"
-              href={RESUME_DATA.scholarUrl}
-              target="_blank"
-              referrerPolicy="no-referrer"
-            >
-              Google Scholar
-            </a>
-            .
-          </p>
-        </Section>
-        <Section>
-          <h2 className="text-lg font-semibold tracking-tight">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
-        </Section>
-        <Section>
-          <h2 className="text-lg font-semibold tracking-tight">Tech Stack</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.techStack.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
-        </Section>
-
         <Section>
           <h2 className="text-lg font-semibold tracking-tight">Awards</h2>
           {RESUME_DATA.awards.map((award) => {
@@ -240,32 +271,21 @@ export default function Page() {
             );
           })}
         </Section>
-
         <Section>
-          <h2 className="text-lg font-semibold tracking-tight">Conferences</h2>
-          {RESUME_DATA.conferences.map((conference, index) => {
-            return (
-              <Card key={`${conference.event}-${conference.date}-${index}`}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      {conference.event}
-                    </h3>
-                    <div className="whitespace-nowrap text-sm tabular-nums text-gray-500">
-                      {conference.date}
-                    </div>
-                  </div>
-
-                  <h4 className="text-sm leading-none text-muted-foreground">
-                    {conference.location}
-                  </h4>
-                </CardHeader>
-                <CardContent className="mt-2 text-sm leading-6">
-                  {conference.title}
-                </CardContent>
-              </Card>
-            );
-          })}
+          <h2 className="text-lg font-semibold tracking-tight">Skills</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.skills.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
+            })}
+          </div>
+        </Section>
+        <Section>
+          <h2 className="text-lg font-semibold tracking-tight">Tech Stack</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.techStack.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
+            })}
+          </div>
         </Section>
 
         {/* <Section className="print-force-new-page scroll-mb-16">

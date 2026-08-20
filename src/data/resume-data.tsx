@@ -134,6 +134,38 @@ export const RESUME_DATA = {
   ],
   projects: [],
   scholarUrl: "https://scholar.google.com/citations?user=ZGvO-JYAAAAJ&hl=en",
+  publications: [
+    {
+      title:
+        "Accurate Physics-Based Flexible Docking of Macrocyclic Ligands with MacroDock",
+      venue: "Journal of Medicinal Chemistry",
+      year: "2026",
+      contribution:
+        "Physics-based flexible docking for macrocyclic ligands and cyclic peptides.",
+      link:
+        "https://pubs.acs.org/jmcmar/article/69/4/4745/5086800/Accurate-Physics-Based-Flexible-Docking-of",
+      imageUrl: "/publications/macrodock.png",
+    },
+    {
+      title:
+        "Dimeric architecture and membrane thinning govern substrate recognition by human signal peptide peptidase",
+      venue: "Research Square",
+      year: "2026",
+      contribution:
+        "Structural biology of a human membrane protease and its substrate-recognition mechanism.",
+      link: "https://europepmc.org/article/med/42281969",
+    },
+    {
+      title:
+        "Towards better structural models from cryo-electron microscopy data with physics-based methods",
+      venue: "FEBS Letters",
+      year: "2026",
+      contribution:
+        "Physics-based methods for improving cryo-EM model building and refinement.",
+      link:
+        "https://febs.onlinelibrary.wiley.com/doi/abs/10.1002/1873-3468.70165",
+    },
+  ],
   conferences: [
     {
       title: "Physics-based flexible docking of macrocyclic ligands with MacroDock",
